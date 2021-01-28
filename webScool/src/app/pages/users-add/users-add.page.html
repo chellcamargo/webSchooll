@@ -1,0 +1,35 @@
+<ion-header>
+    <ion-toolbar>
+        <ion-title>Cadastro de Usuário</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content>
+    <ion-item>
+        <ion-label position="floating">Nome</ion-label>
+        <ion-input type="text" [(ngModel)]='user.nome' name='nome'></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="floating">E-mail</ion-label>
+        <ion-input type="email" [(ngModel)]='user.email' name='email'></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="floating">Senha</ion-label>
+        <ion-input type="password" [(ngModel)]='user.senha' name='senha'></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-label position="floating">Confirmar senha</ion-label>
+        <ion-input type="password" name='conFsenha'></ion-input>
+    </ion-item>
+
+    <ion-item>
+        <ion-button expand="block" (click)="salvar()">Salvar</ion-button>
+        <ion-button expand="block" color="danger">Cancelar</ion-button>
+    </ion-item>
+
+
+
+</ion-content>
